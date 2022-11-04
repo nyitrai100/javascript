@@ -159,4 +159,47 @@ console.log(myStr)
 
 //quoting Strings with Single Quotes
 
-var myStr + 
+var myStr = `'<a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/find-the-length-of-a-string" target="_blank">Link</a>'`; 
+ 
+//escape sequences in Strings
+ 
+var myStr = "Firstline\n\t\SecondLine\nThirdline"
+console.log(myStr)
+
+//Concatenating Strings with Plus Operator
+
+var ourStr = "I come first " + "i come second."
+
+var myStr = "This is the star. " + "This is the end."
+console.log(myStr);
+
+var ourStr = "I come first. ";
+ourStr += "i come second.";
+
+var myStr = "this is the first sentence. "
+
+myStr += "this is the second sentence"
+
+console.log(myStr);
+
+//Constructing Strings with Variables
+
+var myName = "Bence Nyitrai";
+var myStr = "Hello my name is " + myName + " What is your Name?";
+console.log(myStr)
+
+//Appending Variables yo Strings
+
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+console.log(ourStr)
+
+//Find Length of String
+
+var firstNameLength = 0;
+var firstName = "Bence";
+firstNameLength = firstName.length;
+console.log(firstNameLength);
+
+//Bracket Notation to Find First Character in String
