@@ -203,3 +203,120 @@ firstNameLength = firstName.length;
 console.log(firstNameLength);
 
 //Bracket Notation to Find First Character in String
+
+var firstLetterOfLastName = "";
+var lastName = "Nyitrai";
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName)
+
+//String Immutability
+
+var myStr = "Jello World";
+
+myStr = "Hello World";
+console.log(myStr)
+
+//Bracket Notation to Fond Nth character in String
+
+var firstName = "Bence";
+var secondLetterOfFirstName = firstName[1];
+console.log(secondLetterOfFirstName);
+
+var lastname = "Nyitrai";
+var thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName);
+
+//Bracket Notation to Find last Character in String
+var firstName = "Bence";
+var lastLetterOfFirstName = firstName[firstName.length -1];
+console.log(lastLetterOfFirstName);
+
+//Bracket Notation to Find Nth-to-last Character in String
+var lastName = "Nyitrai";
+var secondToLastLetterOfLastName = lastName[lastName.length -2];
+console.log(secondToLastLetterOfLastName);
+
+//word Blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb
+
+    return result;
+}
+
+console.log(wordBlanks("dog", "big", "ran", "quickly",));
+console.log(wordBlanks("bike", "slow", "flew", "slowly",));
+
+//Store Multiple Values with Arrays
+
+var ourArray = ["John", 23];
+
+var myArray =["Quincy", 1];
+console.log(myArray);
+
+//Nested Arrays
+
+var ourArray = [["the universe",42],["everything", 101010]];
+var myArray = [["bulls", 23],["white sox", 25],];
+
+//Acces Array Data with Indexes
+
+var ourArray = [50,60,70];
+var ourDate = ourArray[0];
+
+var myArray = [50,60,70];
+var ourData = myArray [0];
+console.log(ourData);
+
+//Modify Array Data With Indexes
+
+var ourArray = [18,64,99];
+ourArray[1] = 45;
+
+var myArray = [18,64,99];
+myArray[0] = 45;
+console.log(myArray);
+
+//Access Multi-dimensional Arrays with indexes
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
+
+var myData = myArray[2][1];
+console.log(myData);
+
+//Manipulate Arrays with push
+
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]);
+
+var myArray = [["John", 23],["cat",2]];
+myArray.push(["dog", 3])
+
+console.log(myArray);
+
+//Manipulate Arrays with pop
+
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+
+var myArray = [["john", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+console.log(myArray);
+
+//manipulate Arrays with shift
+var ourArray = ["Stimpson", "j", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+
+var myArray = [["john", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();
+console.log(myArray);
+
+//Manipulate Arrays with unshift
+
+var myArray = [["john", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["happy", 35]);
+console.log(myArray);
+
+//Shopping list
