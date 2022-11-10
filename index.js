@@ -320,3 +320,63 @@ myArray.unshift(["happy", 35]);
 console.log(myArray);
 
 //Shopping list
+var myList = [["cereal", 3] ["milk, 2"], ["bananas, 3"], ["juice, 2"], ["egg", 12],];
+
+//Write Reusable Code with function
+
+function ourReusableFunction() {
+    console.log("heyya, World");
+}
+
+ourReusableFunction();
+
+function reusableFunction(){
+    console.log("Hi World")
+}
+
+reusableFunction();
+
+//Passing Values to Function with Argument
+
+function ourFunctionWithArgs(a, b) {
+    console.log(a - b);
+}
+ourFunctionWithArgs(10, 5);
+
+function functionWithArgs(a,b){
+    console.log(a + b);
+}
+functionWithArgs(10, 5);
+
+//Global Scope and Functions
+var myGlobal = 10;
+
+function fun1() {
+ oopsGlobal = 5;
+}
+
+function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined"){
+    output += "myGlobal: " + myGlobal;
+}
+if (typeof oopsGlobal != "undefined"){
+    output += " oopsGlobal: " + oopsGlobal;
+}
+console.log(output);
+}
+fun1();
+fun2();
+
+//Local Scope and Functions
+
+function myLocalScope(){
+    var myVar = 5;
+    console.log(myVar);
+}
+
+myLocalScope();
+
+
+//Global vs Local Scope in functions
+
