@@ -391,3 +391,82 @@ console.log(myOutfit());
 console.log(outerWear);
 
 //Return a Value from a function with return
+function minusSeven(num) {
+    return num -7;
+}
+
+console.log(minusSeven(10));
+
+function timesFive(num) {
+    return num * 5;
+}
+console.log(timesFive(5));
+
+//understanding undefined value return from a function
+
+var sum = 0;
+function addThree(){
+    sum = sum + 3;
+}
+
+function addFive(){
+    sum = sum +5
+}
+console.log(addFive(10));
+
+//Assignment with Returned value
+
+var changed = 0;
+
+function change(num) {
+    return (num +5) / 3;
+}
+
+changed = change(10);
+
+var processed = 0;
+
+function processArg(num){
+    return (num+3) / 5;
+}
+processed = processArg(7);
+
+console.log(processed)
+
+//Stand in Line
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    return arr.shift();
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+//Boolean Values
+
+function welcomeToBooleans(){
+    return false;
+}
+
+//use conditional logic with if statements
+
+function ourTrueOrFalse(isItTrue) {
+    if (isItTrue) {
+        return "Yes, it is true";
+    }
+    return "No, it is false";
+}
+
+function trueOrFalse(wasThatTrue){
+    if (wasThatTrue){
+        return "Yes, that was true";
+    }
+        return "No, that was false";
+}
+
+console.log(trueOrFalse(true));
+
