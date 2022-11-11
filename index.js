@@ -504,11 +504,174 @@ function compareEquality(a,b) {
 console.log(compareEquality(10, "10"));
 
 //Comparison with the inequality Operator
-function testNotequal(val) {
+function testNotEqual(val) {
     if (val != 99) {
         return " Not Equal";
     }
     return "Equal";
 }
 
-console.log(testNotequal(10));
+console.log(testNotEqual(10));
+
+//Comparison with the Strict inequality operator
+function testStrictNotEqual(val) {
+    if (val !== 17) {
+        return " Not Equal";
+    }
+    return "Equal";
+}
+
+console.log(testStrictNotEqual(10));
+
+//Comparisons with the logical and operator
+
+function testGreaterThan(val) {
+    if (val > 100) {
+        return " Over 100";
+    }
+
+    if (val > 10) {
+    return "Over 10";
+    }
+    return "10 or Under";
+}
+
+console.log(testGreaterThan(10));
+
+//Comparison with the Greater than or equal to operator
+
+function testGreaterOrEqual(val) {
+    if (val >= 20) {
+        return " 20 or Over";
+    }
+
+    if (val >= 10) {
+    return "10 or Over";
+    }
+    return "less than 10";
+}
+
+console.log(testGreaterOrEqual(10));
+
+//comparison with the less than operator
+
+function testLessThan(val) {
+    if (val < 25) {
+        return "Under 25";
+    }
+
+    if (val < 55) {
+    return "Under 55";
+    }
+    return "55 or Over";
+}
+
+console.log(testLessThan(10));
+
+//Comparison with the less than or equal to operator
+
+function testLessOrEqual(val) {
+    if (val < 12 || val == 12) {
+        return " Smaller Than or equal to 12";
+    }
+
+    if (val < 24 || val == 24) {
+    return "Smaller than or Equal to 24";
+    }
+    return "More Than 24";
+}
+
+console.log(testLessOrEqual(10));
+
+//Comparisons with the logical and operator
+
+function testLogicalAnd(val) {
+
+    if (val <= 50 && val >= 25)
+    {
+        return "Yes";
+    }
+    return "No";
+    
+    
+}
+
+console.log(testLogicalAnd(10));
+
+//Comparisons with the logical or operator
+
+function testLogicalor(val) {
+    if (val < 10 || val > 20) {
+        return "Outside";
+    }
+
+    return "Inside";
+}
+
+console.log(testLogicalor(15));
+
+//else statements
+
+function testElse(val) {
+    if(val > 5) {
+        result ="bigger than 5"
+    } else {
+        result = "5 ore Smaller"
+    }
+    return result;
+
+}
+console.log(testElse(4))
+
+//else if statements
+
+function testElseIf(val){
+    if (val > 10){
+        return "Greater than 10";
+    } else if (val < 5) {
+        return "Smaller than 5";
+    } else {
+        return "between 5 and 10"
+    }
+}
+
+console.log(testElseIf(4));
+
+//logical order in if else statements
+
+function orderMyLogic(val){
+    if (val < 5){
+        return "less than 5";
+    } else if (val < 10) {
+        return "less than 10";
+    } else {
+        return "Greater than or equal to 10"
+    }
+}
+
+console.log(orderMyLogic(4));
+
+//Chaining if else Statement
+
+function testSize(num) {
+    if (num < 5) { 
+        return "Tiny"
+    }
+    else if (num < 10 ){
+        return "small"
+    }
+    else if (num < 15) {
+        return "Medium"
+    }
+    else if (num < 20) {
+        return "Large"
+    }
+    else if (num >= 20) {
+        return "Huge"
+    }
+    
+}
+
+console.log(testSize(7));
+
+//golf code
