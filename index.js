@@ -470,3 +470,45 @@ function trueOrFalse(wasThatTrue){
 
 console.log(trueOrFalse(true));
 
+//comparison with the equality Operator
+
+function testEqual(val){
+    if (val == 12) {
+        return "equal"
+    }
+    return "not Equal"
+}
+
+console.log(testEqual(10));
+
+//comparison with the strict equality operator
+
+function testStrict(val) {
+    if (val === 7) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict(7));
+
+//Practice Comparing Different Values
+
+function compareEquality(a,b) {
+    if (a == b){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(compareEquality(10, "10"));
+
+//Comparison with the inequality Operator
+function testNotequal(val) {
+    if (val != 99) {
+        return " Not Equal";
+    }
+    return "Equal";
+}
+
+console.log(testNotequal(10));
