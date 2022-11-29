@@ -735,25 +735,77 @@
 
 // default option in switch statement
 
-function caseInSwitch(val) {
-    var answer ="";
+// function caseInSwitch(val) {
+//     var answer ="";
+//     switch(val){
+//     case "a":
+//         answer = "apple";
+//         break;
+//     case "b":
+//         answer = "bird"
+//         break;
+//     case "c":
+//         answer = "cat"
+//         break;
+//     default:
+//         answer ="stuff";
+//         break;
+
+//     }
+
+//     return answer;
+// }
+
+// console.log(caseInSwitch("a"));
+
+
+// multiple identical options in switch statements:
+
+// function sequentialSizes(val) {
+//         var answer ="";
+//         switch(val){
+//             case 1:
+//             case 2:
+//             case 3:
+//                 answer = "low"
+//                 break;
+//             case 4:
+//             case 5:
+//             case 6:
+//                 answer = "Mid"
+//                 break;  
+//             case 7:
+//             case 8:
+//             case 9:
+//                 answer = "High"
+//                 break;      
+//         }
+//         return answer;
+//     }
+
+//     console.log(sequentialSizes(1));
+
+//replacing if else chanins with switch
+
+    function chainToSwitch(val){
+        var answer = "";
+
     switch(val){
-    case "a":
-        answer = "apple";
-        break;
-    case "b":
-        answer = "bird"
-        break;
-    case "c":
-        answer = "cat"
-        break;
-    default:
-        answer ="stuff";
-        break;
-
+        case "bob" :
+            answer = "Marley";
+            break;
+        case 42:
+            answer = "The answer";
+            break;
+        case 1:
+            answer = "There is no 1";
+            break;
+        case 99:
+            answer = "Missed me by this much!";
+            break;
+        case 7:
+            answer = "ate nine";
+            break;
     }
-
-    return answer;
-}
-
-console.log(caseInSwitch("a"));
+    }
+    console.log(chainToSwitch(1));
