@@ -812,9 +812,23 @@
 
 // returning boolean values from functions
 
-function isLess(a, b) {
+// function isLess(a, b) {
     
-    return a < b;
+//     return a < b;
          
+// }
+// console.log(isLess(10, 15));
+
+
+
+
+// counting cards
+
+var count = 0;
+function cc(card) {
+
+    return "Change Me";
 }
-console.log(isLess(10, 15));
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+console.log(cc(4));
