@@ -941,3 +941,9 @@
 // };
 
 // delete myDog.legs;
+
+
+
+
+
+//Using Objects for Lookups
