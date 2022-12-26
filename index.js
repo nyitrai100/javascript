@@ -909,12 +909,35 @@
 // var player = testObj[playerNumber];
 
 
-//Uptading Object Properties
+//Uptadeing Object Properties
 
-var myDog = {
-    "name": "Coder",
-    "legs": 4,
-    "friends": ["freeCodeCamp Campers"]
-}
+// var myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "friends": ["freeCodeCamp Campers"]
+// };
 
-myDog.name = "happy Coder";
+// myDog.name = "happy Coder";
+
+
+
+
+// Add New Properties to an Object
+// var myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "friends": ["freeCodeCamp Campers"]
+// };
+
+// myDog.bark = "bow-wow";
+// myDog["bark2"] = "woof!";
+
+
+//Delete Properties From Object
+// var myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "friends": ["freeCodeCamp Campers"]
+// };
+
+// delete myDog.legs;
