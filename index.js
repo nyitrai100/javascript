@@ -948,33 +948,53 @@
 
 //Using Objects for Lookups
 
-function phoneticLookup(val) {
-    var result = "";
+// function phoneticLookup(val) {
+//     var result = "";
 
 
-var lookup = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
+// var lookup = {
+//     "alpha": "Adams",
+//     "bravo": "Boston",
+//     "charlie": "Chicago",
+//     "delta": "Denver",
+// };
+// result = lookup[val];
+// //Change from switch to objects
+//     // switch(val){
+//     //     case "alpha":
+//     //         result = "Adam";
+//     //         break;
+//     //     case "bravo":
+//     //         result = "Boston";
+//     //         break;
+//     //     case "charlie":
+//     //         result = "Chicago";
+//     //         break;
+//     //     case "delta":
+//     //         result = "Denver";
+//     //         break;
+//     // }
+// //
+//     return result;
+// }
+// console.log(phoneticLookup("bravo"));
+
+
+//Testing Objects for Properties
+
+var myObj ={
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh",
 };
-result = lookup[val];
-//Change from switch to objects
-    // switch(val){
-    //     case "alpha":
-    //         result = "Adam";
-    //         break;
-    //     case "bravo":
-    //         result = "Boston";
-    //         break;
-    //     case "charlie":
-    //         result = "Chicago";
-    //         break;
-    //     case "delta":
-    //         result = "Denver";
-    //         break;
-    // }
-//
-    return result;
+
+function checkObj(checkProp){
+
+   if (myObj.hasOwnProperty(checkProp)){
+    return myObj[checkProp];
+   } else{
+    return "Not Found"
+   }
 }
-console.log(phoneticLookup("bravo"));
+
+console.log(checkObj("gift"));
