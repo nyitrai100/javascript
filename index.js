@@ -947,3 +947,28 @@
 
 
 //Using Objects for Lookups
+
+function phoneticLookup(val) {
+    var result = "";
+
+
+    switch(val){
+        case "alpha":
+            result = "Adam";
+            break;
+        case "bravo":
+            result = "Boston";
+            break;
+        case "charlie":
+            result = "Chicage";
+            break;
+        case "delta":
+            result = "Denver";
+            break;
+    }
+
+
+
+
+
+}
