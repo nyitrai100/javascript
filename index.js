@@ -952,23 +952,29 @@ function phoneticLookup(val) {
     var result = "";
 
 
-    switch(val){
-        case "alpha":
-            result = "Adam";
-            break;
-        case "bravo":
-            result = "Boston";
-            break;
-        case "charlie":
-            result = "Chicage";
-            break;
-        case "delta":
-            result = "Denver";
-            break;
-    }
-
-
-
-
-
+var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+};
+result = lookup[val];
+//Change from switch to objects
+    // switch(val){
+    //     case "alpha":
+    //         result = "Adam";
+    //         break;
+    //     case "bravo":
+    //         result = "Boston";
+    //         break;
+    //     case "charlie":
+    //         result = "Chicago";
+    //         break;
+    //     case "delta":
+    //         result = "Denver";
+    //         break;
+    // }
+//
+    return result;
 }
+console.log(phoneticLookup("bravo"));
