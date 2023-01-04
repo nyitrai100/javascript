@@ -1281,9 +1281,21 @@
 
 //Generate Random Fractions
 
-function randomFraction() {
+// function randomFraction() {
 
-    return Math.random();
+//     return Math.random();
+// }
+
+// console.log(randomFraction());
+
+
+//Generate Random Whole Numbers 
+
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+function randomWholeNum(){
+
+    return Math.floor(Math.random() * 10);
 }
 
-console.log(randomFraction());
+console.log(randomWholeNum());
