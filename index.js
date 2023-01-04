@@ -1662,3 +1662,16 @@ class SpaceShuttle {
 }
 var zeus = new SpaceShuttle('Jupiter');
 console.log(zeus.targetPlanet)
+
+
+function makeClass() {
+    class Vegetable{
+        constructor(name){
+            this.name = name;
+        }
+    }
+    return Vegetable
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('Carrot');
+console.log(carrot.name);
