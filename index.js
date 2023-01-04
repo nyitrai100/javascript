@@ -1475,10 +1475,37 @@
 
 //Use the Spread Operator to Evaluate Arrays in-Place
 
-const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
-let arr2;
-(function() {
-    arr2 = arr1;
-    arr1[0] = 'potato'
-})();
-console.log(arr2);
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+// let arr2;
+// (function() {
+//     arr2 = arr1;
+//     arr1[0] = 'potato'
+// })();
+// console.log(arr2);
+
+
+// Use Destructiuring Assignment to Assign Variables from Objects
+
+var voxel = { x: 3.6, y: 7.4, z: 6.54 };
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const { x : a, y : b, z : c } = voxel;
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures){
+    "use strict"
+
+    const { tomorrow : getTempOfTmrw } = avgTemperatures;
+    
+    return getTempOfTmrw;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
