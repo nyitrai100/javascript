@@ -1464,11 +1464,21 @@
 
 //doing the same like the above code.
 
-const sum = (function(){
-    return function sum (...args){
-        return args.reduce((a, b) => a + b, 0);
-    };
+// const sum = (function(){
+//     return function sum (...args){
+//         return args.reduce((a, b) => a + b, 0);
+//     };
+// })();
+
+// console.log(sum(1, 2, 3));
+
+
+//Use the Spread Operator to Evaluate Arrays in-Place
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+    arr2 = arr1;
+    arr1[0] = 'potato'
 })();
-
-console.log(sum(1, 2, 3));
-
+console.log(arr2);
