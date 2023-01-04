@@ -1655,8 +1655,10 @@
 
 
 //Use class Syntax to define a constructor function
-var SpaceShuttle = function(targetPlanet){
+class SpaceShuttle {
+    constructor(targetPlanet){
     this.targetPlanet = targetPlanet;
+    }
 }
 var zeus = new SpaceShuttle('Jupiter');
 console.log(zeus.targetPlanet)
