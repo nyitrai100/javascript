@@ -1631,7 +1631,23 @@
 
 
 
-//Same code like above:
-const createPerson = (name, age, gender) => ({ name, age, gender});
+// //Same code like above:
+// const createPerson = (name, age, gender) => ({ name, age, gender});
 
-console.log(createPerson("Zodiac Hasbro", 56, "male"));
+// console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+
+
+
+//Write Concise Declarative Functions
+
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+        "use strict";
+        this.gear = newGear
+    }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
