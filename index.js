@@ -1330,7 +1330,19 @@
 
 
 // Use the parseInt Function with a Radix
-function convertToInteger(str){
- return parseInt(str, 2)
+// function convertToInteger(str){
+//  return parseInt(str, 2)
+// }
+// convertToInteger("10011");
+
+
+
+// Use the Conditional (ternary) operator
+
+function checkEqual(a, b) {
+   return a === b ? true : false;
+
+   return a === b;
 }
-convertToInteger("10011");
+
+checkEqual(1, 2);
