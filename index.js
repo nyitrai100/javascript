@@ -1355,3 +1355,30 @@
 // }
 
 // console.log(checkSign(0));
+
+
+
+
+//Differences Between the var and let Keywords
+
+
+
+//Compare Scopes of the var and let keywords
+
+
+
+//Declare a Read- Only Variable with the const keyword 
+
+
+//Mutate an Array Declared with const
+
+const s = [5, 7, 2];
+function editInPlace() {
+    "use strict";
+
+    s[0] = 2;
+    s[1] = 5;
+    s[2] = 7;
+}
+editInPlace();
+console.log(s);
