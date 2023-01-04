@@ -1339,10 +1339,19 @@
 
 // Use the Conditional (ternary) operator
 
-function checkEqual(a, b) {
-   return a === b ? true : false;
+// function checkEqual(a, b) {
+//    return a === b ? true : false;
 
-   return a === b;
-}
+//    return a === b;
+// }
 
-checkEqual(1, 2);
+// checkEqual(1, 2);
+
+
+//Use Multiple Conditional (ternary) Operators
+
+// function checkSign(num) {
+//  return num > 0 ? "positive" : num < 0 ? " Negative" : "zero";
+// }
+
+// console.log(checkSign(0));
