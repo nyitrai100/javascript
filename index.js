@@ -1613,3 +1613,7 @@ function makeList(arr) {
 const resultDisplayArray = makeList(result.failure);
 
 console.log(resultDisplayArray);
+
+
+
+//Write Concise Object Literal Declarations Using Simple Fields
