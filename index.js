@@ -1562,19 +1562,32 @@
 
 //Use destructuring Assignment to pass on Object as a function's parameters
 
-const stats = {
-    max: 56.78,
-    standard_deviation: 4.34,
-    median: 34.54,
-    mode: 23.87,
-    min: -0.75,
-    average: 35.85
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// };
+
+// const half = (function(){
+//     return function half({ max, min}){
+//         return (max + min) / 2.0;
+//     };
+// })();
+// console.log(stats);
+// console.log(half(stats));
+
+
+//Create Strings using template literals
+
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
 };
 
-const half = (function(){
-    return function half({ max, min}){
-        return (max + min) / 2.0;
-    };
-})();
-console.log(stats);
-console.log(half(stats));
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`
+
+console.log(greeting);
