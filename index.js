@@ -1002,24 +1002,41 @@
 
 //Manipulating Complex Objects
 
-var myMusic = [
-    {
-        "artist": "Billy Joel",
-        "title": "Piano Man",
-        "release_year": 1973,
-        "formats": [
-        "CD",
-        "8T",
-        "LP"
-        ],
-        "gold":true
+// var myMusic = [
+//     {
+//         "artist": "Billy Joel",
+//         "title": "Piano Man",
+//         "release_year": 1973,
+//         "formats": [
+//         "CD",
+//         "8T",
+//         "LP"
+//         ],
+//         "gold":true
+//     },
+//     {
+//         "artist": "Beau Carnes",
+//         "title": "Cereal Man",
+//         "release_year": 2003,
+//         "formats": [
+//             "Youtube video"
+//         ]
+//     }
+// ];
+
+//Accessing Nested Objects
+
+var myStorage = {
+    "car": {
+        "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
     },
-    {
-        "artist": "Beau Carnes",
-        "title": "Cereal Man",
-        "release_year": 2003,
-        "formats": [
-            "Youtube video"
-        ]
+    "outside":{
+        "trunk": "jack"
     }
-];
+}
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; 
+console.log(gloveBoxContents);
