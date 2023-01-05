@@ -1730,11 +1730,18 @@
 
 //Use Export to Reuse a Code Block
 
-const capitalizeString = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+// const capitalizeString = (string) => {
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
 
-export {capitalizeString};
+// export {capitalizeString};
 
-export const foo = "bar";
-export const bar = "foo";
+// export const foo = "bar";
+// export const bar = "foo";
+
+
+
+
+//use * to import Everthing from a file
+//import everything from a file
+import * as capitalizeString from "./filename";
