@@ -1679,3 +1679,39 @@
 
 
 //Use getters and setters to Control access to an object
+
+class Book { 
+    constructor(author) {
+        this._author = author;
+    }
+
+    get writer(){
+        return this._author
+    }
+
+    set writer(updateAuthor){
+        this._author = updateAuthor
+    }
+}
+
+function makeClass(){
+    class Thermostat{
+        constructor(temperature){
+            this._temp = 5/9 * (temp - 32);
+        }
+        get temperature(){
+            return this._temp;
+        }
+        set temperature(updatedTemp){
+            this._temp = updatedTemp;
+        }
+    }
+    return Thermostat
+}
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp);
