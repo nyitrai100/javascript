@@ -1718,12 +1718,23 @@
 
 
 
-// Understand the Difference Between import and require
-import { capitalizeString } from "./filename"
-const cap = capitalizeString("hello");
+// // Understand the Difference Between import and require
+// import { capitalizeString } from "./filename"
+// const cap = capitalizeString("hello");
 
-console.log(cap);
+// console.log(cap);
+// //we have to put this in an other file.:
+// export const capitalizeString = str => str.toUpperCase()
 
 
-//we have to put this in an other file.:
-export const capitalizeString = str => str.toUpperCase()
+
+//Use Export to Reuse a Code Block
+
+const capitalizeString = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export {capitalizeString};
+
+export const foo = "bar";
+export const bar = "foo";
