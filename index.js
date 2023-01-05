@@ -1748,6 +1748,12 @@
 
 
 
-//Create an Export Fallback with export Default
-//only one thing we wanna export from the file.use default.
-export default function subtract(x,y) {return x - y;}
+// //Create an Export Fallback with export Default
+// //only one thing we wanna export from the file.use default.
+// export default function subtract(x,y) {return x - y;}
+
+
+//Import a default export
+import subtract from "./filename";
+
+subtract(7,4)
