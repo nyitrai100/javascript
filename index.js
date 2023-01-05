@@ -1754,6 +1754,6 @@
 
 
 //Import a default export
-import subtract from "./filename";
+// import subtract from "./filename";
 
-subtract(7,4)
+// subtract(7,4)
