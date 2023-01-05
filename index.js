@@ -1742,6 +1742,12 @@
 
 
 
-//use * to import Everthing from a file
-//import everything from a file
-import * as capitalizeString from "./filename";
+// //use * to import Everthing from a file
+// //import everything from a file
+// import * as capitalizeString from "./filename";
+
+
+
+//Create an Export Fallback with export Default
+//only one thing we wanna export from the file.use default.
+export default function subtract(x,y) {return x - y;}
