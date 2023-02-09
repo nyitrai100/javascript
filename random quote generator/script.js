@@ -5,5 +5,9 @@ function generate(){
         "― C.S. Lewis":'“I was not born to be free---I was born to adore and obey.”',
     }
 
-var authors = Object.keys(quotes);
+    var authors = Object.keys(quotes);
+
+    var author = authors[Math.floor(Math.random() * authors.length)]
+
+    var quote = quotes[author];
 }
