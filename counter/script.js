@@ -2,6 +2,6 @@ var count = 0;
 
 function changeCount(num){
 
-        count +- num;
+        count += num;
         document.getElementById("count").innerHTML = count;
 }
