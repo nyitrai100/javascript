@@ -1,6 +1,5 @@
 .container{
-    border: 1px solid black;
-    width: 95%;
+    width: 70%;
     height: 100vh;
     margin: auto;
     display: flex;
@@ -8,6 +7,10 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+}
+
+.image{
+    display:none
 }
 
 #prev{
@@ -42,6 +45,36 @@
     background-color: black;
 }
 
-.image{
-    display:none
+.dots{
+    text-align: center;
+    margin: 2%;
+}
+
+.dot{
+    height:15px;
+    width:15px;
+    background-color:#bbb;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+}
+
+.active{
+    background-color: #717171;
+}
+
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to {opacity: 1}
+}
+
+@media(max-width:786px) {
+    .container{
+        width:100%;
+    }
 }

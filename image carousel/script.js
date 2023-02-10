@@ -8,11 +8,11 @@ function show_image(i){
 
     var dots = document.getElementsByClassName("dots");
 
-    for(i=0; i < images.length; i++)
+    for(i = 0; i < images.length; i++)
     images[i].style.display = "none";
 
-    for(i=0; i < dots.length; i++)
-    dots[i].className = dots[i].className.replace("active", "");
+    for(i = 0; i < dots.length; i++)
+    dots[i].className = dots[i].className.replace(" active ", "");
 
 
     if( index > images.length -1)
