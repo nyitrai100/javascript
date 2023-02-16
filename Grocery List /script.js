@@ -24,4 +24,6 @@ function addItem(){
     })
 
     allItems.insertAdjacentElement("beforeend", h2);
+
+    userInput.value = "";
 }
