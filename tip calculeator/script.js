@@ -2,12 +2,12 @@ const amount = document.getElementById('amount');
 const guests = document.getElementById('guests');
 const quality = document.getElementById('quality');
 const tipAmount = document.getElementById('tip-amount');
-
+const tipAmountS = document.getElementById('tip-amount.show');
 
 // function calculate(){} - meaning the same like above
 
 calculate = () =>{
-    const tip = ((amount * quality.value) / (guests.value)).toFixed(2);
+    const tip = ((amount.value * quality.value) / (guests.value)).toFixed(2);
     amount.value = '';
     guests.value = '';
     quality.value = '';
@@ -20,4 +20,10 @@ calculate = () =>{
         showTipAmount();
     }
     
+};
+
+showTipAmount = () =>{
+    var x = tipAmount;
+    x.className = 'show';
+    setTimeout(funtion(){x.className = x.className.replace('show', '',)},3000);
 }
