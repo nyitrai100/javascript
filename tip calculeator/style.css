@@ -5,5 +5,22 @@ body{
 }
 
 .container{
-    
+    border: 1px solid black;
+
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    padding: 0.25px;
+    font-size: 1rem;
 }
