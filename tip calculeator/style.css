@@ -100,3 +100,22 @@ body{
     to{bottom:0; opacity: 0;}
     
 }
+
+@media(max-width:480px){
+    .calculator input{
+        width:85%; 
+    }
+
+    .calculator button{
+        width:15%;
+        
+    }
+    
+}
+
+@media(max-width:320px){
+    .calculator input{
+        width: 80%; 
+    }
+    
+}
