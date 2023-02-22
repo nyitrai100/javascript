@@ -13,7 +13,11 @@ calculate = () =>{
     quality.value = '';
     if( tip === 'NaN' ){
         tipAmount.innerHTML = 'Tip 0$ each';
-        showTipAmount()
+        showTipAmount();
+    }
+    else{
+        tipAmount.innerHTML = 'Tip $' + tip + 'each';
+        showTipAmount();
     }
     
 }
