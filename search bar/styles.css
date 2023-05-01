@@ -4,9 +4,10 @@
     gap: .25rem;
   }
   
-  input {
+  .input {
     font-size: 1rem;
   }
+
   
   .user-cards {
     display: grid;
